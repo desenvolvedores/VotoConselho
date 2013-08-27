@@ -365,11 +365,11 @@ public class FormCadastroEleitor extends javax.swing.JFrame {
 
             String nome = null, sala = null;
 
-            nome = txtNome.getText().toUpperCase();
+            nome = txtNome.getText();
             sala = cbxSala.getSelectedItem().toString();
 
-            dao.setParametro1(nome);
-            dao.setParametro2(sala);
+            dao.setParametro3(nome);
+            dao.setParametro4(sala);
 
             dao.createConnection();
             dao.gerarCedulaEleitoral2();
@@ -388,7 +388,7 @@ try {
 
             String nome = null, sala = null;
 
-            nome = txtNome.getText().toUpperCase();
+            nome = txtNome.getText();
             sala = cbxSala.getSelectedItem().toString();
 
             dao.setParametro1(nome);

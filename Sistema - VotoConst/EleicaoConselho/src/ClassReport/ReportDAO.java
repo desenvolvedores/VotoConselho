@@ -17,6 +17,7 @@ public class ReportDAO {
     private String parametro1;
     private String parametro2;
     private String parametro3;
+    private String parametro4;
     public ConnectionFactory conn;
     public java.sql.Connection connection;
     public static String caminhoSubReport = (ReportDAO.class.getResource("").getPath().toString());
@@ -51,6 +52,14 @@ public class ReportDAO {
     public void setParametro3(String parametro3) {
         this.parametro3 = parametro3;
     }
+    
+      public String getParametro4() {
+        return this.parametro4;
+    }
+
+    public void setParametro4(String parametro4) {
+        this.parametro4 = parametro4;
+    }
 
     public void createConnection() {
         conn = new ConnectionFactory();
@@ -67,7 +76,7 @@ public class ReportDAO {
             parametro.put("SALA", parametro2);
             //parametro.put("IMAGE_CANDIDATO", readImageAsByteArray(imagePath));
 
-            JasperReport report = (JasperReport) JRLoader.loadObject(ReportDAO.class.getResource("/Relatorios/Cedula_Segmento_IV.jasper"));
+            JasperReport report = (JasperReport) JRLoader.loadObject(ReportDAO.class.getResource("/Relatorios/Cedula1.jasper"));
             JasperPrint print = JasperFillManager.fillReport(report, parametro, connection);
             
             JasperViewer viewer = new JasperViewer(print, false);
@@ -92,23 +101,23 @@ public class ReportDAO {
     public void gerarCedulaEleitoral2() {
         try {
             
-            HashMap parametro = new HashMap();
+            HashMap parametro2 = new HashMap();
             
-            parametro.put("NOME", parametro1);
-            parametro.put("SALA", parametro2);
+            parametro2.put("NOME", parametro3);
+            parametro2.put("SALA", parametro4);
             //parametro.put("IMAGE_CANDIDATO", readImageAsByteArray(imagePath));
 
-            JasperReport report = (JasperReport) JRLoader.loadObject(ReportDAO.class.getResource("/Cedula_Segmento_VI.jasper"));
-            JasperPrint print = JasperFillManager.fillReport(report, parametro, connection);
+            JasperReport report2 = (JasperReport) JRLoader.loadObject(ReportDAO.class.getResource("/Relatorios/Cedula2.jasper"));
+            JasperPrint print2 = JasperFillManager.fillReport(report2, parametro2, connection);
             
-            JasperViewer viewer = new JasperViewer(print, false);
-            viewer.setTitle("Eleição Conselho Tutelar");
+            JasperViewer viewer2 = new JasperViewer(print2, false);
+            viewer2.setTitle("Eleição Conselho Tutelar");
     
            // URL url = this.getClass().getResource("arquivo.png");
            // Image imagemTitulo = Toolkit.getDefaultToolkit().getImage(url);
            // viewer.setIconImage(imagemTitulo);
             
-            viewer.setVisible(true);
+            viewer2.setVisible(true);
 
         } catch (Exception e) {
             throw new RuntimeException("Erro: " + e.getLocalizedMessage());
