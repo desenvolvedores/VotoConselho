@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Cedula_Segmento_IV" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="903c8748-1579-4714-938b-8a2333f542f6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="5e2f771c-e281-4bdd-9f12-7a9a17061abc"/>
+	<parameter name="NOME" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SALA" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from candidatos where nome = $P{NOME};]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apelido" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numero" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="148" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2d5cc8b5-a971-4445-a1d3-ac16f0a60033" x="0" y="128" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Segmento IV - Associações Civis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f272c479-0390-467e-97d4-386104c698df" x="195" y="80" width="159" height="13"/>
+				<textElement textAlignment="Center">
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Teresinha Oliveira Marciano]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cd61e3ab-9702-48ff-aafe-6b3c9e741b2b" x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Conselho dos Direitos da Criança e do Adolescente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="88801f8c-a743-4757-871e-3521965b0350" x="386" y="97" width="159" height="16"/>
+				<textElement textAlignment="Center">
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Presidente do CMDCA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="54603ae4-088e-4157-8d9e-737a5cbbefe7" x="195" y="93" width="159" height="30"/>
+				<textElement textAlignment="Center">
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Mesa Receptora e Apuradora dos Votos]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="e4260ba9-cca5-4be6-a7dc-99a74dd2b069" x="195" y="80" width="159" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="4984e63d-3255-4c62-a9c8-6861182053aa" x="12" y="98" width="159" height="16"/>
+				<textElement textAlignment="Center">
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Presidente da Comissão Eleitoral]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="525f817f-dd7e-44be-9a63-f0583e243658" x="386" y="81" width="159" height="16"/>
+				<textElement textAlignment="Center">
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Marcia Donata Zumpano]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="6ea9ca1b-ab1a-45f0-b52b-df5b78aeefad" x="386" y="80" width="159" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="7d86f5ac-b95f-4ab7-9429-310aeebaff17" x="12" y="82" width="159" height="16"/>
+				<textElement textAlignment="Center">
+					<font size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Ceci Oliveira Penteado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5ec45125-3218-4d45-a4a4-4781c3692b04" x="0" y="20" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Eleição da Sociedade Civil]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="d1770f2c-4572-42d1-9700-f6e0417279c5" x="12" y="82" width="159" height="1"/>
+			</line>
+			<image>
+				<reportElement uuid="a07c0f75-27d4-48b7-a225-51c86f831fab" x="46" y="27" width="115" height="68"/>
+				<imageExpression><![CDATA["AssinaturaCeci_02.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="ba577f9b-f8f4-489a-ba6c-dd7ad9f411be" x="413" y="50" width="137" height="72"/>
+				<imageExpression><![CDATA["AssinaturaMarcia.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="861a78e3-606e-433b-afb2-d740b6fe7d61" x="0" y="0" width="555" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="a747aa68-8938-4c93-bc4b-e3e700450b12" x="0" y="0" width="77" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="157ccce3-8f35-4507-8c85-7c4a9b408b67" x="46" y="0" width="44" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nº]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="58fa7f8d-c829-40b1-8678-bb7cc8ab4ea7" x="90" y="0" width="383" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="499" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="74241e7a-4bb5-4905-b73d-0bd0df1ca649" x="8" y="26" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="90794a1e-2fd4-4059-873b-77762281df9a" x="46" y="26" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[TERESINHA DE OLIVEIRA MARCIANO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="912134ae-9719-4d5c-b5e6-73ab585c306b" x="8" y="63" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="8c163243-402a-4c60-a698-1aa654eb0c28" x="46" y="63" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[MARINÊS DE LOURDES AVELINO MENEZES DA SILVA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="ecadf57b-ab9b-4d4c-a7de-35d0897d9ff3" x="8" y="104" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="a8fe20f9-994b-45d7-9ae5-1b2978bad8ef" x="46" y="104" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[DANIELA NUNES MARAZZI]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="437292ff-92f5-46c6-bbde-0f5691d92b10" x="8" y="142" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="c6ccbdb4-651c-4aba-ab8f-c711b24aa959" x="46" y="142" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[TARCISO ALVES DE SOUZA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="35a59b8b-75e4-440e-8d5f-330e54bd91cb" x="8" y="177" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="beccbe68-12c1-4dce-aeab-7ab089cbfd2e" x="46" y="177" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[NIVANISIL RIBEIRO DA SILVA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="dd65ec90-24ec-47c7-8713-11225c3f31ae" x="8" y="292" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="a596e1d0-37bf-4022-8117-208ea933bc12" x="8" y="372" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="8e3e7900-5837-47da-8923-232e5790c493" x="46" y="251" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[ELIANA DA SILVA NASCIMENTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2cb1d30b-58fc-424f-aa4d-6fd57c4d6a2f" x="46" y="292" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[LUIZA ROBERLÂNDIA DA SILVA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f8cb8df2-faeb-4d3b-b6ce-bb98971ec473" x="46" y="372" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[ANDRÉ LUIS MACEDO VIEIRA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3720faca-b542-4ea9-9276-22f2159894ca" x="46" y="330" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[FRANKLIN ALVES VEIGA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="4e8e81ea-966d-4901-8ee0-ae415687a7b9" x="8" y="214" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="ae3ff43b-4cd7-4625-b312-7952492bd287" x="46" y="214" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[VANUSA SOARES DE SÁ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="847bb5f5-97fc-4c72-8b98-7510a01b6167" x="8" y="330" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="5651d17e-5986-4d6b-9319-67a41aebfbb2" x="8" y="251" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="a64a8882-90a9-4844-a4b3-e5499147775f" x="8" y="414" width="16" height="20"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="c3ff46b5-d733-4ead-aece-19e671843b9e" x="46" y="414" width="476" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[PATRÍCIA MARIA DO NASCIMENTO REBELO]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="9dcdac42-b464-4a1e-aac4-e78adc32cfd8" x="0" y="35" width="100" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Nome do eleitor:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="73780830-c21b-4728-9208-12652341c023" x="412" y="35" width="45" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Nº sala:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dcced5bf-1e2a-40c7-acea-6ac04bdb3c76" x="0" y="15" width="77" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Data votação:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="f6fd8e53-0730-4962-a386-1c6cf22fdb42" x="33" y="79" width="138" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="1d23c91a-5c3b-4905-9d62-431958142f1c" x="33" y="80" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Assinatura eleitor]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="e5e434c4-1a8f-4e92-aeee-cbfcedd13a03" x="384" y="79" width="138" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="bd15aae1-7c3d-4597-9a6a-a289f24a0164" x="384" y="79" width="138" height="21"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Assinatura mesário]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42aab17d-32de-42e1-a640-3c256c83f7d7" x="0" y="0" width="555" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<text><![CDATA[------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="916f37a5-fb2b-4992-9e2a-d0bd384ea277" x="77" y="15" width="143" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[28 de Agosto de 2013]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="edf68884-4d9a-49b6-ab68-4150cb562b5a" x="100" y="35" width="312" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NOME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cb0d5e0c-ec66-47fa-9ba0-5300eaf24829" x="457" y="35" width="98" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SALA}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
